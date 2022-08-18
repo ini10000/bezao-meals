@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Button from "./Button";
-import Card from "./Card";
+
+import MenuCard from "./MenuCard";
 
 
-function Menu({ setOpen, menu, filter }) {
+function FullMenu({menu, filter}) {
+  useEffect(() => {}, [menu, filter])
   return (
     <div className="bg-[#FAFAFA] flex flex-col items-center">
       <div className="!items-start w-[83%]">
@@ -32,7 +34,8 @@ function Menu({ setOpen, menu, filter }) {
       </div>
       <div className="flex flex-wrap justify-center">
         {menu.map((item, index) => (
-          <Card
+          <MenuCard
+          filter={filter}
             image={item.image}
             name={item.name}
             price={item.price}
@@ -41,8 +44,7 @@ function Menu({ setOpen, menu, filter }) {
         ))}
       </div>
       <Button
-        click={() => setOpen(true)}
-        text="Full Menu"
+        text="Add Item"
         width="120"
         height="54"
         extra="mt-[60px] px-[24px] mb-[152px]"
@@ -51,4 +53,4 @@ function Menu({ setOpen, menu, filter }) {
   );
 }
 
-export default Menu;
+export default FullMenu;

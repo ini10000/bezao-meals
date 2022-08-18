@@ -5,7 +5,6 @@ import twitter from "../assets/images/twitter.png";
 import instagram from "../assets/images/instagram.png";
 
 function Footer() {
-  console.log(window.innerWidth)
   return (
     <div className="flex flex-col bg-[#FAFAFA] justify-center">
       <div className="flex flex-wrap mt-[128px] pb-[42px] border-b border-[#B3B3B3]/40 justify-center">

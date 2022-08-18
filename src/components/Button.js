@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ text, width, height, extra, radius, display }) {
+function Button({ text, width, height, extra, radius, click, display }) {
   return (
     <div
       style={{
@@ -9,7 +9,8 @@ function Button({ text, width, height, extra, radius, display }) {
         borderRadius: `${radius ? radius : "30"}px`,
         display: display,
       }}
-      className={`px-[6px] ${extra} flex bg-[#DA3743] justify-center items-center text-white text-base`}
+      onClick={click}
+      className={`cursor-pointer px-[6px] ${extra} flex bg-[#DA3743] justify-center items-center text-white text-base`}
     >
       <p className="text-base">{text}</p>
     </div>
