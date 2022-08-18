@@ -4,8 +4,8 @@ import Button from "./Button";
 
 function Landing() {
   return (
-    <div className="flex flex-row justify-center mt-[75px] mb-[200px]">
-      <div className="text-left mr-[27px] justify-center flex flex-col">
+    <div className="flex flex-wrap justify-center mt-[75px] mb-[200px]">
+      <div className="text-left mr-[27px] mb-5 justify-center flex flex-col">
         <p className="w-[551px] font-[Lato-Bold] text-[64px] leading-[72px]">
           Delicious meals at your convenience
         </p>

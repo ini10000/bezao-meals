@@ -49,11 +49,11 @@ function Menu() {
           MENU
         </p>
       </div>
-      <div className="flex flex-row justify-between items-center w-[83%]">
-        <p className="font-[Lato-Bold] text-[42px] leading-[124%] w-[60%]">
+      <div className="flex flex-wrap justify-between items-center w-[83%]">
+        <p className="font-[Lato-Bold] text-[42px] leading-[124%] w-[778px]]">
           Current Menu
         </p>
-        <div className="flex flex-row justify-between items-center w-[40%] h-[40px] px-1 border border-[#EBEBEB] rounded-[8px] grow-0">
+        <div className="flex flex-row justify-between items-center w-[350px] h-[40px] px-1 border border-[#EBEBEB] rounded-[8px] grow-0">
           <Button
             extra="text-base cursor-pointer"
             text="All"
@@ -82,7 +82,7 @@ function Menu() {
         text="Full Menu"
         width="120"
         height="54"
-        extra="mt-[60px] px-[24px]"
+        extra="mt-[60px] px-[24px] mb-[152px]"
       />
     </div>
   );
